@@ -1,0 +1,139 @@
+/* Sección general de planes */
+
+.plans-title {
+  color: #8c52ff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0; 
+  width: 100%; 
+}
+
+/* Contenedor para las tarjetas */
+/* Contenedor de las tarjetas */
+.plans-section {
+  display: flex; /* Habilita el diseño en fila */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a una nueva fila si no caben */
+  gap: 20px; /* Espaciado entre tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+
+}
+
+
+/* Estilos generales para los planes */
+.plan {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white; /* Texto en blanco para contraste */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+  transform: translateY(-5px); /* Elevación en hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para títulos y textos */
+.plan h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.plan ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra para texto */
+}
+
+.plan p {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.plan strong {
+  color: #8c52ff; /* Violeta */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra para contraste */
+}
+
+/* Fondos específicos por plan */
+.basic-plan {
+  background-image: url('/public/images/basico.jpg'); /* Ruta de la imagen */
+}
+
+.intermediate-plan {
+  background-image: url('/public/images/estandar.jpg'); /* Ruta de la imagen */
+}
+
+.advanced-plan {
+  background-image: url('/public/images/premium.jpg'); /* Ruta de la imagen */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .plan {
+    width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+  }
+
+  .plans-title {
+    font-size: 24px; /* Reduce el tamaño del título */
+    margin-bottom: 20px;
+  }
+
+  .plan h3 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título */
+  }
+  .plans-section {
+    padding-top: 100px; /* Agrega suficiente espacio para el menú desplegable */
+  }
+}
+
+/* Sección general de términos y condiciones */
+.policies-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #233565; /* Fondo azul oscuro */
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.policies-title {
+  font-size: 1.8rem;
+  color: #8c52ff; /* Violeta */
+  margin-bottom: 20px;
+}
+
+.policies-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policies-section ul li {
+  font-size: 1rem;
+  color: #ccc; /* Texto gris claro */
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

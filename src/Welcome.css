@@ -1,0 +1,176 @@
+/* Estilo general para banners */
+/* Elimina cualquier desbordamiento horizontal global */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Previene movimientos laterales */
+}
+
+/* Asegura que todos los elementos respeten el ancho del contenedor */
+* {
+  box-sizing: border-box; /* Incluye márgenes y padding en el cálculo del ancho */
+}
+
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para sección de bienvenida */
+#welcome.bienvenida {
+  background-image: url(img/banner_ppal.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  text-align: center;
+  padding: 20px;
+  background-color: #233565;
+  color: white;
+}
+
+#welcome.bienvenida h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#welcome.bienvenida p {
+  font-size: 1.2rem;
+  font-weight: 900;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Sección de testimonios */
+#testimonials {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Estilo para imágenes generales */
+.testimonials-image {
+  width: 100%; /* Ocupa el ancho disponible */
+  max-width: 300px; /* Limita el tamaño máximo */
+  height: 120px; /* Mantén las proporciones */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 0 auto; /* Centra la imagen */
+}
+
+.image-container {
+  width: 100%; /* Por defecto, usa todo el ancho */
+  max-width: 300px; /* Limita el tamaño máximo */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.banner {
+  width: 100%; /* Ocupa el espacio del contenedor */
+  height: auto; /* Mantén las proporciones */
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .testimonials-image {
+    max-width: 80%; /* Reduce el tamaño máximo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  #welcome.bienvenida .banner {
+    max-width: 100%; /* Asegura que se ajuste al ancho de la pantalla */
+    height: auto; /* Mantiene las proporciones */
+  }
+
+  #welcome.bienvenida {
+    padding: 10px; /* Reduce el espaciado interno en dispositivos pequeños */
+  }
+}
+
+
+
+#testimonials h2 {
+  font-size: 1.8rem;
+  color: #8c52ff;
+  margin-bottom: 20px;
+}
+#testimonials ul {
+  list-style: none; /* Elimina las viñetas */
+  padding: 0;
+}
+
+/* Sección de estadísticas */
+#statistics {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+#statistics h2 {
+  font-size: 1.8rem;
+  color: #233565;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stats div {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 180px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8c52ff;
+  margin-bottom: 10px;
+}
+
+/* Para llamada a la acción */
+#cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #233565;
+  color: white;
+}
+
+#cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #8c52ff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #cb6ce6;
+}
