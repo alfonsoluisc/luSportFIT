@@ -1,6 +1,7 @@
 {
   "name": "lu-sport-fit",
   "version": "0.1.0",
+  "homepage": "https://<tu-nombre-de-usuario>.github.io/<nombre-del-repositorio>",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
