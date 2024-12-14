@@ -17,7 +17,7 @@ const Plans = () => {
           <li>Acceso exclusivo a contenido premium y herramientas digitales.</li>
           <li>Soporte personalizado 24/7.</li>
         </ul>
-        <p><strong>Costo:</strong> $350.000 COP al mes.</p>
+        <p><strong>Costo:</strong> $587.000 COP al mes.</p>
       </div>
       {/* Plan Básico */}
       <div className="plan basic-plan">
