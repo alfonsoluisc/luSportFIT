@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/luSportFIT/static/css/main.790fdb45.css",
+    "main.js": "/luSportFIT/static/js/main.e188fa75.js",
+    "static/media/banner_ppal.png": "/luSportFIT/static/media/banner_ppal.1c1c0716f97f6b965641.png",
+    "static/media/logo3.png": "/luSportFIT/static/media/logo3.33df7bc693dbceecc444.png",
+    "static/media/premium.jpg": "/luSportFIT/static/media/premium.7c6bbe9bc7c9dbf86f74.jpg",
+    "static/media/basico.jpg": "/luSportFIT/static/media/basico.a67ab8ff627cc56c8407.jpg",
+    "static/media/estandar.jpg": "/luSportFIT/static/media/estandar.73023f0da168e950d44b.jpg",
+    "index.html": "/luSportFIT/index.html",
+    "main.790fdb45.css.map": "/luSportFIT/static/css/main.790fdb45.css.map",
+    "main.e188fa75.js.map": "/luSportFIT/static/js/main.e188fa75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.790fdb45.css",
+    "static/js/main.e188fa75.js"
+  ]
+}
