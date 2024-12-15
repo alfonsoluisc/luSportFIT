@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import "../Blog1.css";
 
 const Blog1 = () => {
