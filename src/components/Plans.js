@@ -1,53 +1,86 @@
 import React from 'react';
 import '../Plans.css';
 
+const PlanCard = ({ title, description, features, cost, className, image }) => {
+  return (
+    <div className={`plan ${className}`}>
+      {/* Imagen */}
+      <img src={image} alt={title} className="plan-image" />
+
+      {/* Precio */}
+      <div className="price">{cost}</div>
+
+      {/* Descripción */}
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <ul>
+        {features.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 const Plans = () => {
+  const plansData = [
+    {
+      title: 'Plan Avanzado',
+      description: 'Dirigido a quienes buscan maximizar su rendimiento físico y alcanzar metas ambiciosas.',
+      features: [
+        '6 sesiones semanales de 1 hora y media.',
+        'Entrenamiento de alto rendimiento con técnicas avanzadas.',
+        'Plan de alimentación personalizado y revisión quincenal.',
+        'Acceso exclusivo a contenido premium y herramientas digitales.',
+        'Soporte personalizado 24/7.',
+      ],
+      cost: '$597.000 COP/mes',
+      className: 'advanced-plan',
+      image: '/images/premium.jpg',
+    },
+        {
+      title: 'Plan Intermedio',
+      description: 'Perfecto para quienes buscan resultados visibles y una rutina más completa.',
+      features: [
+        '5 sesiones semanales de 1 hora.',
+        'Rutinas personalizadas adaptadas a tus metas.',
+        'Plan de alimentación diseñado por nuestros expertos.',
+        'Asesoramiento constante con seguimiento mensual.',
+      ],
+      cost: '$497.000 COP/mes',
+      className: 'intermediate-plan',
+      image: '/images/estandar.jpg',
+    },
+    {
+      title: 'Plan Básico',
+      description: 'Ideal para quienes están comenzando o desean mantener una rutina ligera.',
+      features: [
+        '3 sesiones semanales de 1 hora.',
+        'Asesoramiento básico sobre rutinas de ejercicios.',
+        'Recomendaciones generales de nutrición.',
+        'Acceso a sesiones grupales.',
+      ],
+      cost: '$397.000 COP/mes',
+      className: 'basic-plan',
+      image: '/images/basico.jpg',
+    },
+
+  ];
+
   return (
     <section className="plans-section">
       <h2 className="plans-title">Nuestros Planes</h2>
-
-    {/* Plan Avanzado */}
-    <div className="plan advanced-plan">
-        <h3>Plan Avanzado</h3>
-        <p>Dirigido a quienes buscan maximizar su rendimiento físico y alcanzar metas ambiciosas.</p>
-        <ul>
-          <li>6 sesiones semanales de 1 hora y media.</li>
-          <li>Entrenamiento de alto rendimiento con técnicas avanzadas.</li>
-          <li>Plan de alimentación personalizado y revisión quincenal.</li>
-          <li>Acceso exclusivo a contenido premium y herramientas digitales.</li>
-          <li>Soporte personalizado 24/7.</li>
-        </ul>
-        <p><strong>Costo:</strong> $587.000 COP al mes.</p>
-      </div>
-      {/* Plan Básico */}
-      <div className="plan basic-plan">
-        <h3>Plan Básico</h3>
-        <p>Ideal para quienes están comenzando o desean mantener una rutina ligera.</p>
-        <ul>
-          <li>3 sesiones semanales de 1 hora.</li>
-          <li>Asesoramiento básico sobre rutinas de ejercicios.</li>
-          <li>Recomendaciones generales de nutrición.</li>
-          <li>Acceso a sesiones grupales.</li>
-        </ul>
-        <p><strong>Costo:</strong> $100.000 COP al mes.</p>
-      </div>
-
-      {/* Plan Intermedio */}
-      <div className="plan intermediate-plan">
-        <h3>Plan Intermedio</h3>
-        <p>Perfecto para quienes buscan resultados visibles y una rutina más completa.</p>
-        <ul>
-          <li>5 sesiones semanales de 1 hora.</li>
-          <li>Rutinas personalizadas adaptadas a tus metas.</li>
-          <li>Plan de alimentación diseñado por nuestros expertos.</li>
-          <li>Asesoramiento constante con seguimiento mensual.</li>
-        </ul>
-        <p><strong>Costo:</strong> $200.000 COP al mes.</p>
-      </div>
-
-      
-
-      {/* Términos y Condiciones */}
+      {plansData.map((plan, index) => (
+        <PlanCard
+          key={index}
+          title={plan.title}
+          description={plan.description}
+          features={plan.features}
+          cost={plan.cost}
+          className={plan.className}
+          image={plan.image} // Asegúrate de pasar la propiedad image
+        />
+      ))}
       <section className="policies-section">
         <h2 className="policies-title">Términos y Condiciones</h2>
         <ul>

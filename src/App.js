@@ -10,6 +10,7 @@ import Blog1 from './components/Blog1'; // Página específica Blog1
 import Blog2 from './components/Blog2';
 import Blog3 from './components/Blog3';
 import Footer from './components/Footer';
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blog3" element={<Blog3 />} />
       </Routes>
       <Footer /> {/* Pie de página visible en todas las páginas */}
+      <WhatsAppButton /> {/* Agrega el botón flotante */}
     </Router>
   );
 }
